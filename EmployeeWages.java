@@ -15,6 +15,7 @@ public class EmployeeWages {
 			case 2:
 			System.out.println("part time employee is present");
 			workingHour = 4;
+			break;
 			default:
 			System.out.println("Employee is absent");
 			workingHour = 0;
