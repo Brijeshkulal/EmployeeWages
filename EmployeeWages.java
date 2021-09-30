@@ -17,10 +17,10 @@ public class EmployeeWages {
 			workingHour = 4;
 		}
 		else
-    	{
+		{
 			System.out.println("Employee is absent");
 			workingHour = 0;
-    	}
+		}
 		System.out.println("Employee Wage per day is " + wagePerHour * workingHour);
 	}
 }
