@@ -11,7 +11,8 @@ public class EmployeeWages {
 		int totalWorkingDays = 0;
 		while(totalWorkingHour <= maxHoursInMonth && totalWorkingDays < workingDays)
 		{
-		int empCheck = (int) Math.floor(Math.random() * 10) % 3;
+			totalWorkingDays++;
+			int empCheck = (int) Math.floor(Math.random() * 10) % 3;
 			switch(empCheck)
 			{
 				case 1:
@@ -24,6 +25,7 @@ public class EmployeeWages {
 				workingHour = 0;
 			}
 			totalWorkingHour += workingHour;
+			System.out.println("Day : " + totalWorkingDays + " Emp Hrs : " +totalWorkingHour);
 		}
 		totalEmployeeWage = totalWorkingHour * wagePerHour;
 		System.out.println("Total Employee wages " + totalEmployeeWage);
